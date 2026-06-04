@@ -1,0 +1,48 @@
+/* enzzero — design tokens v2  (core palette kept 100%; neutrals/tints/semantics added) */
+:root{
+  /* ---- CORE BRAND (unchanged) ---- */
+  --ink:#0B0D10;        /* primary dark / text */
+  --paper:#FFFFFF;      /* light surface */
+  --lime:#B6FF3C;       /* gradient start / energy */
+  --cyan:#34D6FF;       /* gradient end / info */
+  --coral:#FF5C35;      /* secondary accent */
+  --grad: linear-gradient(135deg,#B6FF3C 0%,#34D6FF 100%);
+
+  /* ---- accessible text shades of brights (for use ON white) ---- */
+  --lime-text:#4F8A00;
+  --cyan-text:#0E7E9E;
+  --coral-text:#C2360F;
+
+  /* ---- NEUTRAL RAMP (cool gray, leans to ink) ---- */
+  --n-50:#F6F8FA;  --n-100:#ECEFF3; --n-200:#DCE1E8; --n-300:#C2CAD4;
+  --n-400:#9AA4B2; --n-500:#6B7480; --n-600:#4A525C; --n-700:#2E343C;
+  --n-800:#1A1E24; --n-900:#0B0D10;
+
+  /* ---- SOFT TINTS (backgrounds, badges, hovers) ---- */
+  --lime-50:#F3FFE0;  --lime-100:#E4FFBD;
+  --cyan-50:#E6FAFF;  --cyan-100:#C4F2FF;
+  --coral-50:#FFEDE7; --coral-100:#FFD7CB;
+
+  /* ---- SEMANTIC (built from brand colors; amber added for warning) ---- */
+  --success:#B6FF3C; --success-text:#4F8A00; --success-bg:#F3FFE0;
+  --info:#34D6FF;    --info-text:#0E7E9E;    --info-bg:#E6FAFF;
+  --error:#FF5C35;   --error-text:#C2360F;   --error-bg:#FFEDE7;
+  --warning:#F5A623; --warning-text:#9A6300; --warning-bg:#FFF3DE;  /* new, secondary only */
+
+  /* ---- TEXT ROLES ---- */
+  --text:#0B0D10; --text-muted:#6B7480; --text-subtle:#9AA4B2; --text-on-dark:#FFFFFF;
+
+  /* ---- TYPE SCALE (Satoshi display / Space Grotesk UI / Space Mono detail) ---- */
+  --font-display:"Satoshi",system-ui,sans-serif;
+  --font-ui:"Space Grotesk",system-ui,sans-serif;
+  --font-mono:"Space Mono",monospace;
+  --t-display:clamp(40px,6vw,72px)/1.0;  /* hero */
+  --t-h1:40px/1.05; --t-h2:30px/1.1; --t-h3:22px/1.2;
+  --t-body:16px/1.6; --t-small:14px/1.55; --t-caption:12px/1.4;
+
+  /* ---- RADIUS / ELEVATION ---- */
+  --r-sm:8px; --r-md:12px; --r-lg:18px; --r-pill:999px; --r-tile:22%;
+  --shadow-1:0 1px 2px rgba(11,13,16,.06),0 1px 3px rgba(11,13,16,.10);
+  --shadow-2:0 4px 12px rgba(11,13,16,.10);
+  --glow-lime:0 0 24px rgba(182,255,60,.35);
+}
